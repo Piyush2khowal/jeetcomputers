@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JEET COMPUTERS | Technology Partner for Your Business</title>
+  <meta name="description" content="JEET COMPUTERS - a technology partner that keeps your business moving.">
+  <!-- Inline SVG favicon so the browser never requests a missing file (no console errors) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23111111'/%3E%3Ctext x='16' y='22' font-size='18' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3EJ%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================================================
+       1. HEADER (sticky)
+       ============================================================ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#home" class="brand" aria-label="JEET COMPUTERS home">
+        <span class="brand-mark" aria-hidden="true">J</span>
+        <span class="brand-name">JEET COMPUTERS</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <!-- Shown inside the mobile menu only -->
+        <a href="#contact" class="btn btn-dark nav-cta-mobile">Contact Us</a>
+      </nav>
+
+      <a href="#contact" class="btn btn-dark header-cta">Contact Us</a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================================================
+         2. HERO SLIDER
+         Photos (no text in them): images/hero-1.jpg, hero-2.jpg, hero-3.jpg
+         ============================================================ -->
+    <section class="hero" id="home" aria-roledescription="carousel" aria-label="Featured messages">
+      <div class="slides">
+
+        <div class="slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 3">
+          <div class="slide-content">
+            <h1>Technology That Keeps Your Business Moving.</h1>
+            <p>Reliable computer solutions and support, so you can focus on running your business.</p>
+            <div class="slide-actions">
+              <a href="#contact" class="btn btn-dark btn-lg">Get in touch</a>
+              <a href="#services" class="btn btn-outline btn-lg">See our services</a>
+            </div>
+          </div>
+          <img class="slide-image" src="images/hero-1.jpg" alt="Technician setting up a desktop computer in a modern office" width="1600" height="900">
+        </div>
+
+        <div class="slide" role="group" aria-roledescription="slide" aria-label="2 of 3">
+          <div class="slide-content">
+            <h2 class="slide-title">Smart Solutions. Better Performance.</h2>
+            <p>Technology chosen carefully, set up properly and built to keep up with your work.</p>
+            <div class="slide-actions">
+              <a href="#services" class="btn btn-dark btn-lg">Explore services</a>
+              <a href="#about" class="btn btn-outline btn-lg">About us</a>
+            </div>
+          </div>
+          <img class="slide-image" src="images/hero-2.jpg" alt="Clean, well-organised desktop computer on a workbench" width="1600" height="900">
+        </div>
+
+        <div class="slide" role="group" aria-roledescription="slide" aria-label="3 of 3">
+          <div class="slide-content">
+            <h2 class="slide-title">Your Technology Partner, Every Step of the Way.</h2>
+            <p>From the first question to long-term support, we are here when you need us.</p>
+            <div class="slide-actions">
+              <a href="#contact" class="btn btn-dark btn-lg">Talk to us</a>
+              <a href="#experience" class="btn btn-outline btn-lg">Our experience</a>
+            </div>
+          </div>
+          <img class="slide-image" src="images/hero-3.jpg" alt="Consultant helping a customer with a laptop in a computer store" width="1600" height="900">
+        </div>
+
+      </div>
+
+      <!-- Slider controls (previous, dots, next) -->
+      <div class="slider-controls">
+        <button class="slider-btn prev" id="slide-prev" aria-label="Previous slide">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="slider-dots" id="slide-dots" role="tablist" aria-label="Choose slide">
+          <button class="dot is-active" role="tab" aria-label="Go to slide 1" aria-selected="true"></button>
+          <button class="dot" role="tab" aria-label="Go to slide 2" aria-selected="false"></button>
+          <button class="dot" role="tab" aria-label="Go to slide 3" aria-selected="false"></button>
+        </div>
+        <button class="slider-btn next" id="slide-next" aria-label="Next slide">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         3. ABOUT US
+         Image: images/about.jpg
+         ============================================================ -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img src="images/about.jpg" alt="Professional computer workspace" width="1000" height="800" loading="lazy">
+        </div>
+        <div class="about-text">
+          <h2>About Jeet Computers</h2>
+          <!-- EDIT: replace with your real company story -->
+          <p>Jeet Computers is a technology business that helps people and companies get more from their computers. We focus on clear advice, dependable work and service you can count on.</p>
+          <p>Add a short paragraph here about when the business started, who you serve and what makes your team different.</p>
+          <a href="#services" class="btn btn-dark btn-lg" id="learn-more">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         4. SERVICES
+         EDIT: change the titles and text below. These are placeholders;
+         add only the services Jeet Computers really offers.
+         Icons are inline SVG (they use the text colour, so they stay black).
+         To add a service: copy one <article class="service-card"> block.
+         ============================================================ -->
+    <section class="section section-grey" id="services">
+      <div class="container">
+        <div class="section-head">
+          <h2>Our Services</h2>
+          <p>Replace the placeholder cards below with the services Jeet Computers offers.</p>
+        </div>
+
+        <div class="service-grid">
+
+          <article class="service-card">
+            <svg class="service-icon" viewBox="0 0 24 24" width="40" height="40" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4"/></svg>
+            <h3>Service Title 1</h3>
+            <p>Short description of this service. Edit this text in index.html.</p>
+          </article>
+
+          <article class="service-card">
+            <svg class="service-icon" viewBox="0 0 24 24" width="40" height="40" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="10" rx="1.5"/><path d="M2 19h20"/></svg>
+            <h3>Service Title 2</h3>
+            <p>Short description of this service. Edit this text in index.html.</p>
+          </article>
+
+          <article class="service-card">
+            <svg class="service-icon" viewBox="0 0 24 24" width="40" height="40" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v5M12 12l-6 5M12 12l6 5"/></svg>
+            <h3>Service Title 3</h3>
+            <p>Short description of this service. Edit this text in index.html.</p>
+          </article>
+
+          <article class="service-card">
+            <svg class="service-icon" viewBox="0 0 24 24" width="40" height="40" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.5a4 4 0 0 0-5 5L3 18l3 3 6.5-6.5a4 4 0 0 0 5-5l-2.5 2.5-2.5-.5-.5-2.5z"/></svg>
+            <h3>Service Title 4</h3>
+            <p>Short description of this service. Edit this text in index.html.</p>
+          </article>
+
+          <article class="service-card">
+            <svg class="service-icon" viewBox="0 0 24 24" width="40" height="40" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6z"/></svg>
+            <h3>Service Title 5</h3>
+            <p>Short description of this service. Edit this text in index.html.</p>
+          </article>
+
+          <article class="service-card">
+            <svg class="service-icon" viewBox="0 0 24 24" width="40" height="40" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1"/><rect x="17" y="14" width="4" height="6" rx="1"/></svg>
+            <h3>Service Title 6</h3>
+            <p>Short description of this service. Edit this text in index.html.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         5. EXPERIENCE (animated counters)
+         EDIT: data-target = final number, data-suffix = text after it
+         ============================================================ -->
+    <section class="section section-dark" id="experience">
+      <div class="container">
+        <div class="section-head">
+          <h2>Experience you can rely on</h2>
+        </div>
+        <div class="stats-grid">
+          <div class="stat">
+            <div class="stat-number"><span class="counter" data-target="10" data-suffix="+">0</span></div>
+            <p>Years of Experience</p>
+          </div>
+          <div class="stat">
+            <div class="stat-number"><span class="counter" data-target="500" data-suffix="+">0</span></div>
+            <p>Happy Customers</p>
+          </div>
+          <div class="stat">
+            <div class="stat-number"><span class="counter" data-target="300" data-suffix="+">0</span></div>
+            <p>Projects Completed</p>
+          </div>
+          <div class="stat">
+            <div class="stat-number"><span class="counter" data-target="100" data-suffix="%">0</span></div>
+            <p>Customer Commitment</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6. CONTACT
+         EDIT: phone, email and address. WhatsApp number format: country
+         code + number, digits only (e.g. 919876543210).
+         ============================================================ -->
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+
+        <div class="contact-info">
+          <h2>Contact us</h2>
+          <p>Tell us what you need and we will get back to you.</p>
+
+          <ul class="contact-cards">
+            <li class="contact-card">
+              <svg class="contact-icon" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+              <div>
+                <span class="contact-label">Phone</span>
+                <a href="tel:+910000000000" id="contact-phone">+91 00000 00000</a>
+              </div>
+            </li>
+            <li class="contact-card">
+              <svg class="contact-icon" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+              <div>
+                <span class="contact-label">Email</span>
+                <a href="mailto:info@example.com" id="contact-email">info@example.com</a>
+              </div>
+            </li>
+            <li class="contact-card">
+              <svg class="contact-icon" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <div>
+                <span class="contact-label">Address</span>
+                <span>Shop No. 00, Your Street, Your City, State, PIN</span>
+              </div>
+            </li>
+          </ul>
+
+          <a class="btn btn-dark btn-lg" id="whatsapp-btn"
+             href="https://wa.me/910000000000?text=Hello%20JEET%20COMPUTERS%2C%20I%20would%20like%20to%20know%20more."
+             target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.38A9.9 9.9 0 1 0 12.04 2zm0 18.1a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 1 1 7 3.86zm4.5-6.1c-.25-.12-1.46-.72-1.69-.8-.23-.09-.39-.12-.56.12-.16.25-.64.8-.78.97-.14.16-.29.18-.54.06a6.7 6.7 0 0 1-3.3-2.88c-.25-.43.25-.4.72-1.33.08-.16.04-.3-.02-.42-.06-.12-.56-1.35-.76-1.85-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.3-.23.25-.86.84-.86 2.05s.88 2.38 1 2.55c.12.16 1.73 2.64 4.2 3.7 1.56.67 2.17.73 2.95.62.48-.07 1.46-.6 1.67-1.17.2-.58.2-1.07.14-1.17-.06-.1-.23-.16-.48-.28z"/></svg>
+            Chat on WhatsApp
+          </a>
+        </div>
+
+        <!-- Form: opens the visitor's email app with the message filled in -->
+        <form class="contact-form" id="contact-form" novalidate>
+          <h3>Send a message</h3>
+          <div class="field">
+            <label for="cf-name">Your name</label>
+            <input type="text" id="cf-name" name="name" autocomplete="name" required>
+            <span class="error" data-error-for="cf-name"></span>
+          </div>
+          <div class="field">
+            <label for="cf-email">Email address</label>
+            <input type="email" id="cf-email" name="email" autocomplete="email" required>
+            <span class="error" data-error-for="cf-email"></span>
+          </div>
+          <div class="field">
+            <label for="cf-message">How can we help?</label>
+            <textarea id="cf-message" name="message" rows="5" required></textarea>
+            <span class="error" data-error-for="cf-message"></span>
+          </div>
+          <button type="submit" class="btn btn-dark btn-lg">Send message</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       7. FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <a href="#home" class="brand brand-light" aria-label="JEET COMPUTERS home">
+          <span class="brand-mark" aria-hidden="true">J</span>
+          <span class="brand-name">JEET COMPUTERS</span>
+        </a>
+        <p>Your technology partner, every step of the way.</p>
+      </div>
+
+      <div>
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Services</h4>
+        <!-- EDIT: keep in sync with the Services section -->
+        <ul>
+          <li><a href="#services">Service Title 1</a></li>
+          <li><a href="#services">Service Title 2</a></li>
+          <li><a href="#services">Service Title 3</a></li>
+          <li><a href="#services">Service Title 4</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+910000000000">+91 00000 00000</a></li>
+          <li><a href="mailto:info@example.com">info@example.com</a></li>
+          <li>Shop No. 00, Your Street, Your City</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> JEET COMPUTERS. All rights reserved.</p>
+      <a href="#top" class="back-to-top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
